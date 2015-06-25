@@ -1,0 +1,27 @@
+<html>
+  <head>
+    {% if title %}
+        <title>{{ title }}</title>
+     {% else %}
+        <title>Welcome Friends</title>
+     {% endif %}      
+  </head>  
+  <body>
+    <h1>Hello</h1>
+    <ol>
+      <li>jai</li>
+      <li>mata</li>
+      <li>di</li>
+    </ol>
+    {% for elem in friends %}
+    <h2>{{elem}}</h2>
+    {% endfor %}
+    <p>Hello All</p>
+    <div>
+    <a href="/divyank"><img src="/static/divyank.jpg" alt="HTML tutorial" style="width:42px;height:42px;border:0"></a>
+    <a href="/gyanendra"><img src="/static/gyanendra.jpg" alt="HTML tutorial" style="width:42px;height:42px;border:0"></a>
+    <a href="/abhinav"><img src="/static/abhinav.jpg" alt="HTML tutorial" style="width:42px;height:42px;border:0"></a>
+    <a href="/pawan"><img src="/static/pawan.jpg" alt="HTML tutorial" style="width:42px;height:42px;border:0"></a>
+    </div>
+  </body>
+</html>
